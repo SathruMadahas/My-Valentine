@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- 🎵 BACKGROUND MUSIC -->
+<audio id="bgMusic" loop>
+  <!-- 🔁 ADD YOUR MUSIC FILE HERE -->
+  <source src="music/kalyani.mp3" type="audio/mp3">
+</audio>
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+<!-- 🌸 INTRO SCREEN -->
+<div class="screen active">
+  <h1 class="intro-text">Hey… I have something special to ask you 💕</h1>
+  <button class="continue-btn" onclick="nextScreen()">Continue ➜</button>
+</div>
+
+<!-- 💍 QUESTION 1 -->
+<div class="screen">
+
+  <!-- 🎥 ADD VIDEO / GIF HERE -->
+  <video autoplay muted loop class="question-video">
+    <source src="videos/toothles.whitefury.mp4" type="video/mp4">
+  </video>
+
+  <h2>Do you like spending time with me? 🥰</h2>
+
+  <div class="buttons">
+    <button class="yes" onclick="nextScreen()">Yes 💖</button>
+    <button class="no switch">No 🙈</button>
+  </div>
+</div>
+
+<!-- 💞 QUESTION 2 -->
+<div class="screen">
+
+  <!-- 🎥 ADD VIDEO / GIF HERE -->
+  <video autoplay muted loop class="question-video">
+    <source src="videos/hiccup.astrid.mp4" type="video/mp4">
+  </video>
+
+  <h2>Do I make you smile sometimes? 😊</h2>
+
+  <div class="buttons">
+    <button class="yes" onclick="nextScreen()">Yes 💕</button>
+    <button class="no runaway">No 😜</button>
+  </div>
+</div>
+
+<!-- ❤️ FINAL QUESTION -->
+<div class="screen">
+
+  <!-- 🎥 ADD VIDEO / GIF HERE -->
+  <video autoplay muted loop class="question-video">
+    <source src="videos/elements..mp4" type="video/mp4">
+  </video>
+
+  <h2>Will you be my Valentine? 💘</h2>
+
+  <div class="buttons">
+    <button class="yes big" onclick="finalYes()">YES 💖</button>
+    <button class="no runaway">No 😏</button>
+  </div>
+</div>
+
+<!-- 🎆 FINAL SCREEN -->
+<div class="screen">
+
+  <!-- 🎆 FIRECRACKER VIDEO -->
+  <video autoplay muted loop class="question-video">
+    <source src="videos/flinn.rapunzel.mp4" type="video/mp4">
+  </video>
+
+  <h1 class="final-text">You just made me the happiest person ❤️</h1>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
